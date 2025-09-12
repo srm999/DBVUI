@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TestQueryPairs UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo">DQ</div>
+        <div class="titles">
+          <h1>TestQueryPairs Manager</h1>
+          <p>Blue & white, simple, and extensible</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <button class="nav-btn" data-view="new">New Test Case</button>
+        <button class="nav-btn" data-view="testcases">All Test Cases</button>
+        <button class="nav-btn" data-view="connections">Connections</button>
+      </nav>
+    </header>
+
+    <main id="app" class="container">
+      <!-- Views are injected here by app.js -->
+    </main>
+
+    <footer class="app-footer">
+      <div>
+        <button id="importBtn" class="secondary">Import CSV</button>
+        <button id="exportBtn" class="secondary">Export CSV</button>
+        <input id="fileInput" type="file" accept=".csv,text/csv" hidden />
+      </div>
+      <div class="note">
+        Tip: Save your Excel as CSV to import. XLSX support can be added later.
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
